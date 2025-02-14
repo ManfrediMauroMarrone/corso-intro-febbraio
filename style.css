@@ -4,16 +4,29 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 20px;
+}
+
 /*------------------------------NAV-----------------------------------*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 nav a{
     color: white;
     background-color: chocolate;
-    width: 10%;
     padding: 10px;
     display: inline-block;
     text-align: center;
     text-decoration: none;
+}
+
+nav .nav-links{
+    display: flex;
 }
 
 /*------------------------------INTRO---------------------------------*/
@@ -42,6 +55,63 @@ h1{
 .work-with-us_top button:hover{
     background-color: rgb(63, 124, 237);
     color: rgb(199, 199, 199);
+}
+
+.card{
+    width: 200px;
+    border: 1px solid black;
+    left: 40%;
+    position: relative;
+}
+
+#close-icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#card-img-container{
+    width: 100%;
+}
+
+#card-img-container img{
+    width: 100%;
+}
+
+.flex-container{
+    background-color: burlywood;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red{
+    background-color: crimson;
+}
+
+.blue{
+    background-color: cornflowerblue;
+}
+
+.green{
+    background-color: chartreuse;
+}
+
+.purple{
+    background-color: rgb(132, 0, 255);
 }
 
 
