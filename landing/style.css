@@ -1,0 +1,51 @@
+@import url('./index.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+nav{
+    display: flex;
+    padding: 18px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.nav-right ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-right ul li{
+    padding: 10px 20px;
+}
+
+.nav-right a{
+    font-size: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-right a:hover{
+    color: var(--primary-color);
+}
+
+.nav-right ul li:last-child{
+    width: 60px;
+    height: 50px;
+}
+
+.nav-right ul li:last-child img{
+    width: 100%;
+}
