@@ -7,6 +7,15 @@
     font-family: "Poppins", serif;
 }
 
+.btn{
+    display: inline-block;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
 body{
     background-color: #F8F8F8;
 }
@@ -52,40 +61,66 @@ section{
     padding: 50px 10%;
 }
 
-#about{
+#home{
     display: flex;
     align-items: center;
 }
 
-.about-left{
+.home-left{
     width: 50%;
 }
 
-.about-left h1{
+.home-left h1{
     font-size: var(--big-font);
     color: var(--primary-color);
 }
 
-.about-left h2{
+.home-left h2{
     font-size: var(--h2-font);
     margin: 1rem 0;
 }
 
-.about-left a{
-    display: inline-block;
-    color: var(--bg-color);
-    background-color: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 0.5rem;
-    text-decoration: none;
-}
-
-.about-right{
+.home-right{
     width: 50%;
     display: flex;
     align-items: flex-start;
 }
 
-.about-right img{
+.home-right img{
     width: 100%;
+}
+
+
+#about{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.about-left, .about-right{
+    width: 50%;
+}
+
+.about-left img{
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.about-right span{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.about-right h2{
+    font-size: var(--h2-font);
+}
+
+.about-right p{
+    margin: 0.8rem 0 1.8rem;
 }
