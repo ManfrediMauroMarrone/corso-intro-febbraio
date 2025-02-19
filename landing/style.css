@@ -7,8 +7,13 @@
     font-family: "Poppins", serif;
 }
 
+body{
+    background-color: #F8F8F8;
+}
+
 nav{
     display: flex;
+    background-color: var(--bg-color);
     padding: 18px 100px;
     justify-content: space-between;
     align-items: center;
@@ -24,10 +29,8 @@ nav{
 .nav-right ul{
     display: flex;
     list-style: none;
-}
-
-.nav-right ul li{
-    padding: 10px 20px;
+    align-items: center;
+    gap: 40px;
 }
 
 .nav-right a{
@@ -42,10 +45,47 @@ nav{
 }
 
 .nav-right ul li:last-child{
-    width: 60px;
-    height: 50px;
+    font-size: 20px;
 }
 
-.nav-right ul li:last-child img{
+section{
+    padding: 50px 10%;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+}
+
+.about-left{
+    width: 50%;
+}
+
+.about-left h1{
+    font-size: var(--big-font);
+    color: var(--primary-color);
+}
+
+.about-left h2{
+    font-size: var(--h2-font);
+    margin: 1rem 0;
+}
+
+.about-left a{
+    display: inline-block;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.about-right{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-right img{
     width: 100%;
 }
