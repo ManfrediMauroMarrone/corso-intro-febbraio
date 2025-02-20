@@ -7,6 +7,10 @@
     font-family: "Poppins", serif;
 }
 
+body{
+    background-color: #F8F8F8;
+}
+
 .btn{
     display: inline-block;
     color: var(--bg-color);
@@ -16,12 +20,23 @@
     text-decoration: none;
 }
 
-body{
-    background-color: #F8F8F8;
+section{
+    padding: 50px 10%;
 }
 
+.section-intro{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.section-title{
+    font-size: var(--h2-font);
+}
+/* ------------------------------------------------NAV------------------------------------------------------ */
 nav{
     display: flex;
+    position: fixed;
+    width: 100%;
     background-color: var(--bg-color);
     padding: 18px 100px;
     justify-content: space-between;
@@ -57,9 +72,9 @@ nav{
     font-size: 20px;
 }
 
-section{
-    padding: 50px 10%;
-}
+
+/* -------------------------------------------------------HOME----------------------------------------------- */
+
 
 #home{
     display: flex;
@@ -90,6 +105,7 @@ section{
     width: 100%;
 }
 
+/* ----------------------------------------------------ABOUT---------------------------------------------------- */
 
 #about{
     display: flex;
@@ -112,15 +128,86 @@ section{
     align-items: baseline;
 }
 
-.about-right span{
-    color: var(--primary-color);
-    font-weight: 500;
-}
-
-.about-right h2{
-    font-size: var(--h2-font);
-}
-
 .about-right p{
     margin: 0.8rem 0 1.8rem;
 }
+
+/* ---------------------------------------------------MENU--------------------------------------------------- */
+
+#menu{
+    text-align: center;
+}
+
+.menu-bottom{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.menu-bottom-card{
+    position: relative;
+    box-shadow: 0 2px 4px rgb(4 64 54 / 10%);
+    padding: 10px;
+    height: auto;
+    flex-grow: 1;
+    border-radius: 0.5rem;
+}
+
+.menu-bottom-card_img-container{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.menu-bottom-card_img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.menu-bottom-card p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
+}
+
+.menu-bottom-card span{
+    font-size: var(--p-font);
+    font-weight: 500;
+}
+
+.fa-cart-shopping{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    background: var(--primary-color);
+    border-radius: 0 0.5rem 0 0.5rem;
+    padding: 5px 8px;
+}
+
+/* -----------------------------------------------SERVICES------------------------------------------ */
+
+#services{
+    text-align: center;
+}
+
+.services-bottom{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.services-bottom-card_img-container{
+    width: 60px;
+    margin: auto;
+}
+
+.services-bottom-card_img-container img{
+    width: 100%;
+}
+
+.services-bottom-card h3{
+    margin: 4px 0 10px;
+}
+
