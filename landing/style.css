@@ -1,213 +1,312 @@
-@import url('./index.css');
+@import url("./index.css");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
 }
 
-body{
-    background-color: #F8F8F8;
+body {
+  background-color: #f8f8f8;
+  position: relative
 }
 
-.btn{
-    display: inline-block;
-    color: var(--bg-color);
-    background-color: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 0.5rem;
-    text-decoration: none;
+.btn {
+  display: inline-block;
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  text-decoration: none;
 }
 
-section{
-    padding: 50px 10%;
+section {
+  padding: 50px 10%;
 }
 
-.section-intro{
-    color: var(--primary-color);
-    font-weight: 500;
+.section-intro {
+  color: var(--primary-color);
+  font-weight: 500;
 }
 
-.section-title{
-    font-size: var(--h2-font);
+.section-title {
+  font-size: var(--h2-font);
 }
 /* ------------------------------------------------NAV------------------------------------------------------ */
-nav{
-    display: flex;
-    position: fixed;
-    width: 100%;
-    background-color: var(--bg-color);
-    padding: 18px 100px;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: var(--bg-color);
+  padding: 18px 100px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-left a{
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.2rem;
+.nav-left a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
-.nav-right ul{
-    display: flex;
-    list-style: none;
-    align-items: center;
-    gap: 40px;
+.nav-right ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 40px;
 }
 
-.nav-right a{
-    font-size: 1rem;
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: 500;
+.nav-right a {
+  font-size: 1rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.nav-right a:hover{
-    color: var(--primary-color);
+.nav-right a:hover {
+  color: var(--primary-color);
 }
 
-.nav-right ul li:last-child{
-    font-size: 20px;
+.nav-right ul li:last-child {
+  font-size: 20px;
 }
-
 
 /* -------------------------------------------------------HOME----------------------------------------------- */
 
-
-#home{
-    display: flex;
-    align-items: center;
+#home {
+  display: flex;
+  align-items: center;
 }
 
-.home-left{
-    width: 50%;
+.home-left {
+  width: 50%;
 }
 
-.home-left h1{
-    font-size: var(--big-font);
-    color: var(--primary-color);
+.home-left h1 {
+  font-size: var(--big-font);
+  color: var(--primary-color);
 }
 
-.home-left h2{
-    font-size: var(--h2-font);
-    margin: 1rem 0;
+.home-left h2 {
+  font-size: var(--h2-font);
+  margin: 1rem 0;
 }
 
-.home-right{
-    width: 50%;
-    display: flex;
-    align-items: flex-start;
+.home-right {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
 }
 
-.home-right img{
-    width: 100%;
+.home-right img {
+  width: 100%;
 }
 
 /* ----------------------------------------------------ABOUT---------------------------------------------------- */
 
-#about{
-    display: flex;
-    gap: 1.5rem;
+#about {
+  display: flex;
+  gap: 1.5rem;
 }
 
-.about-left, .about-right{
-    width: 50%;
+.about-left,
+.about-right {
+  width: 50%;
 }
 
-.about-left img{
-    width: 80%;
-    border-radius: 0.5rem;
+.about-left img {
+  width: 80%;
+  border-radius: 0.5rem;
 }
 
-.about-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
+.about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
 }
 
-.about-right p{
-    margin: 0.8rem 0 1.8rem;
+.about-right p {
+  margin: 0.8rem 0 1.8rem;
 }
 
 /* ---------------------------------------------------MENU--------------------------------------------------- */
 
-#menu{
-    text-align: center;
+#menu {
+  text-align: center;
 }
 
-.menu-bottom{
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 2rem;
+.menu-bottom {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-.menu-bottom-card{
-    position: relative;
-    box-shadow: 0 2px 4px rgb(4 64 54 / 10%);
-    padding: 10px;
-    height: auto;
-    flex-grow: 1;
-    border-radius: 0.5rem;
+.menu-bottom-card {
+  position: relative;
+  box-shadow: 0 2px 4px rgb(4 64 54 / 10%);
+  padding: 10px;
+  height: auto;
+  flex-grow: 1;
+  border-radius: 0.5rem;
 }
 
-.menu-bottom-card_img-container{
-    width: 200px;
-    height: 200px;
-    margin: auto;
+.menu-bottom-card_img-container {
+  width: 200px;
+  height: 200px;
+  margin: auto;
 }
 
-.menu-bottom-card_img-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.menu-bottom-card_img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.menu-bottom-card p{
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 4px 0 10px;
+.menu-bottom-card p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 4px 0 10px;
 }
 
-.menu-bottom-card span{
-    font-size: var(--p-font);
-    font-weight: 500;
+.menu-bottom-card span {
+  font-size: var(--p-font);
+  font-weight: 500;
 }
 
-.fa-cart-shopping{
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 20px;
-    background: var(--primary-color);
-    border-radius: 0 0.5rem 0 0.5rem;
-    padding: 5px 8px;
+.fa-cart-shopping {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  background: var(--primary-color);
+  border-radius: 0 0.5rem 0 0.5rem;
+  padding: 5px 8px;
 }
 
 /* -----------------------------------------------SERVICES------------------------------------------ */
 
-#services{
-    text-align: center;
+#services {
+  text-align: center;
 }
 
-.services-bottom{
+.services-bottom {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.services-bottom-card_img-container {
+  width: 60px;
+  margin: auto;
+}
+
+.services-bottom-card_img-container img {
+  width: 100%;
+}
+
+.services-bottom-card h3 {
+  margin: 4px 0 10px;
+}
+
+/* ----------------------------------------------CONTACT-------------------------------------------------- */
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-right {
+  display: flex;
+  align-items: center;
+}
+
+/* ----------------------------------------------FOOTER------------------------------------------------------ */
+
+footer .footer-container{
+  display: flex;
+  padding: 50px 10%;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+footer h3 {
+  margin-bottom: 1rem;
+}
+
+footer a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
+
+footer ul {
+  list-style: none;
+}
+
+.socials {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.socials a {
+  font-size: 16px;
+  margin-right: 1rem;
+}
+
+.footer-contact{
     display: flex;
-    gap: 1.5rem;
-    margin-top: 2rem;
+    flex-direction: column;
 }
 
-.services-bottom-card_img-container{
-    width: 60px;
-    margin: auto;
+.footer-contact span{
+    margin-bottom: 0.5rem;
 }
 
-.services-bottom-card_img-container img{
+.footer-contact i{
+    margin-right: 1rem;
+}
+
+.copyright{
+    text-align: center;
+    padding: 20px;
+}
+
+/* -----------------------------------------HIDDEN MENU------------------------------------------- */
+
+.hidden-menu{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.388);
+    color: white;
+    
 }
 
-.services-bottom-card h3{
-    margin: 4px 0 10px;
+.hidden-menu-container{
+    position: relative;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
+.hidden-menu-container span{
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+.hidden{
+    display: none;
+}
